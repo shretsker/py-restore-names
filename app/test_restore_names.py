@@ -9,16 +9,16 @@ def test_users() -> list:
         {
             "first_name": None,
             "last_name": "Holy",
-            "full_name": "Jack Holy"
+            "full_name": "Alex Holy"
         },
         {
             "last_name": "Adams",
-            "full_name": "Mike Adams",
+            "full_name": "Johny Adams",
         }
     ]
 
 
 def test_restore_names(test_users: list) -> None:
     restore_names(test_users)
-    assert test_users[0]["first_name"] == "Jack"
-    assert test_users[1]["first_name"] == "Mike"
+    assert test_users[0]["first_name"] == "Alex"
+    assert test_users[1]["first_name"] == "Johny"
